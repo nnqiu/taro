@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var MENU_CONFIG=exports.MENU_CONFIG=[{title:"搞笑段子"},{title:"新闻"},{title:"游戏"}];
