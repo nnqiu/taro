@@ -1,15 +1,16 @@
 {
-	"projectname": "myApp",
-	"description": "",
-	"appid": "wx4b9dac9c03337348",
-	"setting": {
-		"urlCheck": true,
-		"es6": false,
-		"postcss": false,
-		"minified": false
-	},
-	"compileType": "miniprogram",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {}
+  "miniprogramRoot": "./",
+  "projectname": "myApp",
+  "description": "",
+  "appid": "wx4b9dac9c03337348",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {}
 }

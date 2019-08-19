@@ -1,0 +1,7 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="home-main">
+        <scroll-view bindscrolltolower="onScrollToLower" bindscrolltoupper="onScrollToUpper" scroll-y="{{true}}" lower-threshold="{{10}}">
+            <h-1>你好，新闻</h-1>
+        </scroll-view>
+    </view>
+</block>

@@ -1,0 +1,6 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="home-main">
+        <span>I'm Batman!</span>
+        <div className="batman"></div>
+    </view>
+</block>

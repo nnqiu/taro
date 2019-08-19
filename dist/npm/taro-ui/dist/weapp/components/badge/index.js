@@ -1,1 +1,128 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var _class,_temp2,_createClass=function(){function o(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(e,t,n){return t&&o(e.prototype,t),n&&o(e,n),e}}(),_get=function e(t,n,o){null===t&&(t=Function.prototype);var r=Object.getOwnPropertyDescriptor(t,n);if(void 0===r){var a=Object.getPrototypeOf(t);return null===a?void 0:e(a,n,o)}if("value"in r)return r.value;var i=r.get;return void 0!==i?i.call(o):void 0},_index=require("../../../../../prop-types/index.js"),_index2=_interopRequireDefault(_index),_index3=require("../../../../../@tarojs/taro-weapp/index.js"),_index4=_interopRequireDefault(_index3),_isNaN=require("../../../../../lodash/isNaN.js"),_isNaN2=_interopRequireDefault(_isNaN),_index5=require("../../../../../classnames/index.js"),_index6=_interopRequireDefault(_index5),_component=require("../../common/component.js"),_component2=_interopRequireDefault(_component);function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _possibleConstructorReturn(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function _inherits(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}var AtBadge=(_temp2=_class=function(){function i(){var e,t,n;_classCallCheck(this,i);for(var o=arguments.length,r=Array(o),a=0;a<o;a++)r[a]=arguments[a];return(t=n=_possibleConstructorReturn(this,(e=i.__proto__||Object.getPrototypeOf(i)).call.apply(e,[this].concat(r)))).$usedState=["anonymousState__temp","anonymousState__temp2","dot","val","value","maxValue","customStyle","className","children"],n.customComponents=[],_possibleConstructorReturn(n,t)}return _inherits(i,_component2.default),_createClass(i,[{key:"_constructor",value:function(){_get(i.prototype.__proto__||Object.getPrototypeOf(i.prototype),"_constructor",this).apply(this,arguments),this.state={},this.$$refs=[]}},{key:"formatValue",value:function(e,t){if(""===e||null===e)return"";var n=+e;return(0,_isNaN2.default)(n)?e:t<n?t+"+":n}},{key:"_createData",value:function(e,t,n){this.__state=e||this.state||{},this.__props=t||this.props||{};this.$prefix;var o=this.__props,r=o.dot,a=o.value,i=o.maxValue,s=o.customStyle,u=this.formatValue(a,i),l=(0,_index6.default)(["at-badge"],this.__props.className),_=(0,_index3.internal_inline_style)(s);return Object.assign(this.__state,{anonymousState__temp:l,anonymousState__temp2:_,dot:r,val:u}),this.__state}}]),i}(),_class.$$events=[],_class.$$componentPath="Users/baidu/Documents/weixinapp/node_modules/taro-ui/dist/weapp/components/badge/index",_temp2);AtBadge.defaultProps={dot:!1,value:"",maxValue:99,customStyle:{},className:""},AtBadge.propTypes={dot:_index2.default.bool,value:_index2.default.oneOfType([_index2.default.string,_index2.default.number]),maxValue:_index2.default.number,customStyle:_index2.default.oneOfType([_index2.default.object,_index2.default.string]),className:_index2.default.oneOfType([_index2.default.array,_index2.default.string])},exports.default=AtBadge,Component(require("../../../../../@tarojs/taro-weapp/index.js").default.createComponent(AtBadge));
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _class, _temp2;
+
+var _index = require("../../../../../prop-types/index.js");
+
+var _index2 = _interopRequireDefault(_index);
+
+var _index3 = require("../../../../../@tarojs/taro-weapp/index.js");
+
+var _index4 = _interopRequireDefault(_index3);
+
+var _isNaN = require("../../../../../lodash/isNaN.js");
+
+var _isNaN2 = _interopRequireDefault(_isNaN);
+
+var _index5 = require("../../../../../classnames/index.js");
+
+var _index6 = _interopRequireDefault(_index5);
+
+var _component = require("../../common/component.js");
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AtBadge = (_temp2 = _class = function (_AtComponent) {
+  _inherits(AtBadge, _AtComponent);
+
+  function AtBadge() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, AtBadge);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AtBadge.__proto__ || Object.getPrototypeOf(AtBadge)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "dot", "val", "value", "maxValue", "customStyle", "className", "children"], _this.customComponents = [], _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(AtBadge, [{
+    key: "_constructor",
+    value: function _constructor() {
+      _get(AtBadge.prototype.__proto__ || Object.getPrototypeOf(AtBadge.prototype), "_constructor", this).apply(this, arguments);
+      this.state = {};
+      this.$$refs = [];
+    }
+  }, {
+    key: "formatValue",
+    value: function formatValue(value, maxValue) {
+      if (value === '' || value === null) {
+        return '';
+      }var numValue = +value;
+      if ((0, _isNaN2.default)(numValue)) {
+        return value;
+      }
+      return numValue > maxValue ? maxValue + "+" : numValue;
+    }
+  }, {
+    key: "_createData",
+    value: function _createData() {
+      this.__state = arguments[0] || this.state || {};
+      this.__props = arguments[1] || this.props || {};
+      var __isRunloopRef = arguments[2];
+      var __prefix = this.$prefix;
+      ;
+
+      var _props = this.__props,
+          dot = _props.dot,
+          value = _props.value,
+          maxValue = _props.maxValue,
+          customStyle = _props.customStyle;
+
+      var rootClassName = ['at-badge'];
+
+      var val = this.formatValue(value, maxValue);
+
+      var anonymousState__temp = (0, _index6.default)(rootClassName, this.__props.className);
+      var anonymousState__temp2 = (0, _index3.internal_inline_style)(customStyle);
+      Object.assign(this.__state, {
+        anonymousState__temp: anonymousState__temp,
+        anonymousState__temp2: anonymousState__temp2,
+        dot: dot,
+        val: val
+      });
+      return this.__state;
+    }
+  }]);
+
+  return AtBadge;
+}(_component2.default), _class.$$events = [], _class.$$componentPath = "Users/bjhl/personal/taro/taro/node_modules/taro-ui/dist/weapp/components/badge/index", _temp2);
+
+
+AtBadge.defaultProps = {
+  dot: false,
+  value: '',
+  maxValue: 99,
+  customStyle: {},
+  className: ''
+};
+
+AtBadge.propTypes = {
+  dot: _index2.default.bool,
+  value: _index2.default.oneOfType([_index2.default.string, _index2.default.number]),
+  maxValue: _index2.default.number,
+  customStyle: _index2.default.oneOfType([_index2.default.object, _index2.default.string]),
+  className: _index2.default.oneOfType([_index2.default.array, _index2.default.string])
+};
+exports.default = AtBadge;
+
+Component(require('../../../../../@tarojs/taro-weapp/index.js').default.createComponent(AtBadge));

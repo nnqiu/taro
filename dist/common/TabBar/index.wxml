@@ -1,0 +1,5 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="home-main">
+        <at-tab-bar compid="{{$compid__28}}"></at-tab-bar>
+    </view>
+</block>

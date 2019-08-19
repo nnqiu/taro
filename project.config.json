@@ -2,12 +2,13 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "myApp",
 	"description": "",
-	"appid": "touristappid",
+	"appid": "wx4b9dac9c03337348",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
 		"postcss": false,
-		"minified": false
+		"minified": false,
+		"uploadWithSourceMap": true
 	},
 	"compileType": "miniprogram",
 	"simulatorType": "wechat",

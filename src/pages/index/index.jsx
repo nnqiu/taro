@@ -4,7 +4,7 @@
  */
 
 import Taro, {Component} from '@tarojs/taro';
-import {View, ScrollView} from '@tarojs/components';
+import {View, ScrollView, Image} from '@tarojs/components';
 import {observer, inject} from '@tarojs/mobx';
 import {AtTabBar} from 'taro-ui';
 import {MENU_CONFIG} from './config';
@@ -14,9 +14,9 @@ import './index.less';
 @observer
 
 export default class Index extends Component {
-
     config = {
-        navigationBarTitleText: 'Welcome!'
+        // 设置导航语
+        navigationBarTitleText: 'Hello World!'
     }
 
     componentDidMount() {
@@ -38,6 +38,14 @@ export default class Index extends Component {
         console.log(21)
     }
 
+    // 跳转路由
+    goRoute(index) {
+        const name = MENU_CONFIG[index].text;
+        Taro.navigateTo({
+            url: `/pages/${name}/index`
+        })
+    }
+
     render() {
 
         const listData = this.props.homeStore.listData;
@@ -45,8 +53,9 @@ export default class Index extends Component {
         return (
             <View className='home-main'>
                 <AtTabBar
+                    fixed
                     tabList={MENU_CONFIG}
-                    onClick={() => {}}
+                    onClick={this.goRoute}
                 />
                 <ScrollView
                     onScrollToLower={this.onScrollToLower}
@@ -54,6 +63,10 @@ export default class Index extends Component {
                     scrollY
                     lowerThreshold={10}
                 >
+                    <Image
+                        // style='width: 300px;height: 300px;background: #fff;'
+                        src="https://i.loli.net/2019/08/19/mBRdQP21z5qWU9h.jpg"
+                    />
                     {listData.map(item => {
                         const newItem = item;
                         return (

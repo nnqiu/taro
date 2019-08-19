@@ -5,12 +5,18 @@
 
 export const MENU_CONFIG = [
     {
-        title: '搞笑段子'
+        title: '搞笑段子',
+        text: 'index',
+        iconType: 'bullet-list'
     },
     {
-        title: '新闻'
+        title: '新闻',
+        text: 'news',
+        iconType: 'camera'
     },
     {
-        title: '游戏'
+        title: '游戏',
+        text: 'games',
+        iconType: 'folder'
     }
 ];

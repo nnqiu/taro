@@ -10,6 +10,7 @@ class MainHome {
 
     @observable listData = []
 
+    // action.bound可以用来自动地将动作绑定到目标对象
     @action.bound getListData() {
         Taro.request({
             url: 'http://116.62.7.205:8080/getList',
