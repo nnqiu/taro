@@ -43,7 +43,7 @@ var Index = (_dec = (0, _index3.inject)('homeStore'), _dec(_class = (0, _index3.
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["loopArray5", "$compid__55", "listData", "homeStore"], _this.config = {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["loopArray0", "$compid__0", "listData", "homeStore"], _this.config = {
       // 设置导航语
       navigationBarTitleText: 'Hello World!'
     }, _this.customComponents = ["AtTabBar"], _temp), _possibleConstructorReturn(_this, _ret);
@@ -100,11 +100,11 @@ var Index = (_dec = (0, _index3.inject)('homeStore'), _dec(_class = (0, _index3.
       var __isRunloopRef = arguments[2];
       var __prefix = this.$prefix;
       ;
-      var $compid__55 = (0, _index.genCompid)(__prefix + "$compid__55");
+      var $compid__0 = (0, _index.genCompid)(__prefix + "$compid__0");
 
       var listData = this.__props.homeStore.listData;
 
-      var loopArray5 = listData.map(function (item, _anonIdx) {
+      var loopArray0 = listData.map(function (item, _anonIdx) {
         item = {
           $original: (0, _index.internal_get_original)(item)
         };
@@ -121,10 +121,10 @@ var Index = (_dec = (0, _index3.inject)('homeStore'), _dec(_class = (0, _index3.
         "fixed": true,
         "tabList": _config.MENU_CONFIG,
         "onClick": this.goRoute
-      }, $compid__55);
+      }, $compid__0);
       Object.assign(this.__state, {
-        loopArray5: loopArray5,
-        $compid__55: $compid__55,
+        loopArray0: loopArray0,
+        $compid__0: $compid__0,
         listData: listData
       });
       return this.__state;

@@ -1,9 +1,9 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="home-main">
-        <at-tab-bar compid="{{$compid__55}}"></at-tab-bar>
+        <at-tab-bar compid="{{$compid__0}}"></at-tab-bar>
         <scroll-view bindscrolltolower="onScrollToLower" bindscrolltoupper="onScrollToUpper" scroll-y="{{true}}" lower-threshold="{{10}}">
             <image src="https://i.loli.net/2019/08/19/mBRdQP21z5qWU9h.jpg"></image>
-            <view wx:key="newItem.id" class="home-main-feed" wx:for="{{loopArray5}}" wx:for-item="item" wx:for-index="_anonIdx2">{{item.newItem.text}}
+            <view wx:key="newItem.id" class="home-main-feed" wx:for="{{loopArray0}}" wx:for-item="item" wx:for-index="_anonIdx2">{{item.newItem.text}}
                 <image src="{{item.$loopState__temp2}}" lazy-load="{{true}}" mode="widthFix"></image>
             </view>
         </scroll-view>

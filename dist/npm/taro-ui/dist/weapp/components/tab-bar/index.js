@@ -155,19 +155,19 @@ var AtTabBar = (_temp2 = _class = function (_AtComponent) {
         }) : null;
         var $loopState__temp22 = item.$original.image ? (0, _index.internal_inline_style)(imgStyle) : null;
         var $loopState__temp24 = (0, _index.internal_inline_style)(titleStyle);
-        var $compid__1 = (0, _index.genCompid)(__prefix + "dwtUoWBUXC" + i);
+        var $compid__1 = (0, _index.genCompid)(__prefix + "UHLLQPRxdh" + i);
         item.$original.iconType && _index.propsManager.set({
           "dot": $loopState__temp8,
           "value": item.$original.text,
           "maxValue": item.$original.max
         }, $compid__1);
-        var $compid__2 = (0, _index.genCompid)(__prefix + "NpyEzgdVlE" + i);
+        var $compid__2 = (0, _index.genCompid)(__prefix + "EWeaKiBNDy" + i);
         item.$original.image && _index.propsManager.set({
           "dot": $loopState__temp14,
           "value": item.$original.text,
           "maxValue": item.$original.max
         }, $compid__2);
-        var $compid__3 = (0, _index.genCompid)(__prefix + "FXjgiCPOwU" + i);
+        var $compid__3 = (0, _index.genCompid)(__prefix + "ZxetejxflP" + i);
         _index.propsManager.set({
           "dot": item.$original.iconType || item.$original.image ? false : !!item.$original.dot,
           "value": item.$original.iconType || item.$original.image ? '' : item.$original.text,

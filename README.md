@@ -1,6 +1,11 @@
 # taro
 微信小程序（taro + mobx + less + taro-ui）
 
+# 项目开始 
+npm install
+# 微信小程序运行
+npm run dev:weapp
+
 1. #### 开始
 
 taro是一款使用react语法的框架，只要写一套代码就可以运行在微信/百度/支付宝/字节跳动/QQ小程序、快应用、H5、React-Native 等
