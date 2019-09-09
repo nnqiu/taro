@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "banner": "./banner/index"
+  },
+  "navigationBarTitleText": "Hello World!"
+}

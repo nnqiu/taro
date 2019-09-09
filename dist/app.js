@@ -55,12 +55,34 @@ var _App = function (_BaseComponent) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = _App.__proto__ || Object.getPrototypeOf(_App)).call.apply(_ref, [this].concat(args))), _this), _this.config = {
-      pages: ['pages/index/index', 'pages/news/index', 'pages/games/index'],
+      pages: ['pages/home/index', 'pages/news/index', 'pages/games/index'],
       window: {
         backgroundTextStyle: 'light',
         navigationBarBackgroundColor: '#fff',
         navigationBarTitleText: 'WeChat',
         navigationBarTextStyle: 'black'
+      },
+      tabBar: {
+        color: "#666",
+        selectedColor: "#b4282d",
+        backgroundColor: "#fafafa",
+        borderStyle: 'black',
+        list: [{
+          pagePath: "pages/home/index",
+          iconPath: "./assets/tab-bar/home.png",
+          selectedIconPath: "./assets/tab-bar/home-active.png",
+          text: "首页"
+        }, {
+          pagePath: "pages/news/index",
+          iconPath: "./assets/tab-bar/cate.png",
+          selectedIconPath: "./assets/tab-bar/cate-active.png",
+          text: "新闻"
+        }, {
+          pagePath: "pages/games/index",
+          iconPath: "./assets/tab-bar/cart.png",
+          selectedIconPath: "./assets/tab-bar/cart-active.png",
+          text: "游戏"
+        }]
       }
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }

@@ -1,0 +1,15 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="home-main">
+        <view class="home-top">
+            <view class="input-outer">
+                <input type="text" placeholder="请输入内容" />
+            </view>
+        </view>
+        <scroll-view bindscrolltolower="onScrollToLower" bindscrolltoupper="onScrollToUpper" scroll-y="{{true}}" lower-threshold="{{10}}">
+            <banner></banner>
+            <view wx:key="newItem.id" class="home-main-feed" wx:for="{{loopArray0}}" wx:for-item="item" wx:for-index="_anonIdx2">{{item.newItem.text}}
+                <image src="{{item.$loopState__temp2}}" lazy-load="{{true}}" mode="widthFix"></image>
+            </view>
+        </scroll-view>
+    </view>
+</block>

@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "at-tab-bar": "../../npm/taro-ui/dist/weapp/components/tab-bar/index"
-  },
-  "navigationBarTitleText": "Hello World!"
-}
